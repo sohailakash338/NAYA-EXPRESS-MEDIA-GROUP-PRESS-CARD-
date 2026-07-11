@@ -6,11 +6,9 @@
 <title>Naya Express Media Group | Verification Portal </title>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap" rel="stylesheet">
 
-<!-- WEBSITE LOGO FOR LINK SHARE + TAB ICON -->
+<!-- WEBSITE LOGO FOR LINK SHARE -->
 <link rel="icon" type="image/png" href="logo.png">
 <meta property="og:image" content="logo.png">
-<meta property="og:title" content="Naya Express Media Group">
-<meta property="og:description" content="VOICE OF TRUTH . STRENGTH OF NATION">
 
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
@@ -31,7 +29,7 @@ body{font-family:'Poppins',Arial,sans-serif;background:#060606;color:#fff;min-he
     box-shadow:0 0 25px rgba(244,180,0,0.4);
     padding:6px;
 }
-.logo img{width:100%;height:100%;object-fit:contain} /* CHANGED: svg to img */
+.logo img{width:100%;height:100%;object-fit:contain}
 
 .logo-text h3{font-size:21px;font-weight:800;color:#fff;letter-spacing:0.5px}
 .logo-text p{font-size:11px;color:#00ff88;letter-spacing:2px;margin-top:3px;font-weight:600}
@@ -70,10 +68,11 @@ input::placeholder{color:#444;letter-spacing:1px}
 .status-bar{background:#28a745;color:#fff;text-align:center;padding:18px;font-weight:800;font-size:20px;letter-spacing:1.5px}
 .card-body{padding:45px 40px;line-height:3.2;font-size:20px;color:#fff;text-align:left}
 
-/* 2 PHOTO BOXES ADDED */
+/* BIG PHOTO BOXES */
 .photo-wrapper{display:flex; gap:20px; justify-content:center; margin-bottom:30px; flex-wrap:wrap}
-.photo-box{width:150px;height:185px;border:6px solid #f4b400;border-radius:18px;overflow:hidden;background:#fff;box-shadow:0 0 30px rgba(244,180,0,0.6)}
+.photo-box{width:180px;height:230px;border:6px solid #f4b400;border-radius:18px;overflow:hidden;background:#fff;box-shadow:0 0 30px rgba(244,180,0,0.6)}
 .photo-box img{width:100%;height:100%;object-fit:cover}
+.photo-label{font-size:14px; margin-top:8px; text-align:center; font-weight:700; color:#f4b400}
 
 .label{font-weight:800;color:#f4b400;display:inline-block;width:160px;font-size:20px}
 .chief-section{clear:both;padding-top:30px;margin-top:25px;border-top:4px solid rgba(244,180,0,0.5);text-align:center;font-size:18px}
@@ -89,7 +88,7 @@ h1{font-size:40px}
 .top-bar{flex-direction:column;gap:20px}
 .verify-box{padding:35px 25px}
 .press-card{max-width:100%}
-.photo-box{width:130px;height:165px}
+.photo-box{width:160px;height:210px}
 .card-body{padding:35px 25px;font-size:18px}
 .label{width:140px;font-size:18px}
 </style>
@@ -101,7 +100,7 @@ h1{font-size:40px}
 <div class="top-bar">
     <div class="logo-box">
         <div class="logo">
-            <img src="logo.png" alt="NEX Logo"> <!-- CHANGED: SVG removed, logo.png added -->
+            <img src="logo.png" alt="NEX Logo">
         </div>
         <div class="logo-text">
             <h3>Naya Express Media Group</h3>
@@ -131,17 +130,23 @@ h1{font-size:40px}
     <div class="status-bar">✓ Status: Active</div>
     
     <div class="card-body">
-        <!-- 2 PHOTO BOXES -->
+        <!-- BIG 2 PHOTO BOXES -->
         <div class="photo-wrapper">
-            <div class="photo-box">
-                <img src="photo1.jpg" alt="Member Photo">
+            <div>
+                <div class="photo-box">
+                    <img src="photo1.jpg" alt="Press Card">
+                </div>
+                <div class="photo-label">Press Card</div>
             </div>
-            <div class="photo-box">
-                <img src="photo3.jpg" alt="CNIC Photo">
+            <div>
+                <div class="photo-box">
+                    <img src="photo3.jpg" alt="CNIC">
+                </div>
+                <div class="photo-label">CNIC Card</div>
             </div>
         </div>
         
-        <!-- UPDATED DATA -->
+        <!-- DETAILS BELOW CARD -->
         <div><span class="label">Name:</span> Sadiq Akbar</div>
         <div><span class="label">Designation:</span> District Reporter</div>
         <div><span class="label">District:</span> Charsadda</div>
@@ -156,6 +161,51 @@ h1{font-size:40px}
     
     <div class="footer">
         This card is for identification purpose only | Naya Express Media Group
+    </div>
+</div>
+
+<!-- APPOINTMENT LETTER SECTION - WAPIS LAGA DIYA -->
+<div style="max-width:580px; margin:40px auto; background:#0a3d62; border:4px solid #f4b400; padding:30px; border-radius:20px; text-align:center;">
+    <h2 style="font-size:28px; color:#f4b400; margin-bottom:20px; border-bottom:2px solid #f4b400; padding-bottom:10px;">اعلان تقرری</h2>
+    
+    <div style="display:flex; align-items:center; justify-content:center; gap:20px; flex-wrap:wrap; margin-bottom:20px;">
+        <div style="flex:1; min-width:200px;">
+            <img src="photo1.jpg" alt="Sadiq Akbar" style="width:100%; max-width:200px; border:3px solid #f4b400; border-radius:15px;">
+        </div>
+        <div style="flex:1.5; min-width:250px; text-align:right; direction:rtl; font-size:20px; line-height:2.2; color:#fff;">
+            <p><b>صدیق اکبر</b></p>
+            <p>کو</p>
+            <p style="background:#f4b400; color:#0a3d62; padding:5px 15px; display:inline-block; font-weight:700; border-radius:8px;">ڈسٹرکٹ رپورٹر</p>
+            <p>ضلع <b>چارسدہ</b> مقرر کیا گیا ہے</p>
+        </div>
+    </div>
+
+    <hr style="margin:20px 0; border:none; border-top:1px dashed #f4b400;">
+
+    <div style="font-size:18px; line-height:2; direction:rtl; color:#fff;">
+        <p>سرکاری غیر سرکاری ادارے نوٹ فرما لیں</p>
+        <p style="background:#f4b400; color:#0a3d62; padding:8px 20px; display:inline-block; font-weight:700; margin-top:10px; border-radius:8px;">خبریں اشاعت کے لیے رابطہ کریں</p>
+        <div style="margin-top:15px;">
+            <img src="photo2.jpg" alt="Appointment Letter" style="width:100%; max-width:400px; border:2px solid #f4b400; border-radius:15px;">
+        </div>
+    </div>
+
+    <!-- IMPORTANT NOTE FROM IDARA -->
+    <div style="margin-top:25px; background:#000; color:#ff0000; padding:15px; border-radius:10px; font-size:16px; font-weight:700; text-align:center; direction:rtl;">
+        نوٹ: جس شناختی کارڈ کا سٹیٹس "Active" نہیں ہوگا وہ ادارے سے منسلک نہیں ہے۔<br>
+        کسی بھی شک کی صورت میں ادارے سے رابطہ کریں۔
+    </div>
+
+    <div style="display:flex; justify-content:space-between; align-items:center; margin-top:25px; background:#000; color:#fff; padding:15px; border-radius:10px; flex-wrap:wrap;">
+        <div style="text-align:right; direction:rtl;">
+            <p style="font-size:16px;">چیف ایڈیٹر</p>
+            <p style="font-size:16px;">غلام رضا گورایہ</p>
+            <p style="font-size:18px; color:#f4b400; font-weight:700;">0346-7792566</p>
+        </div>
+        <div style="text-align:left;">
+            <p style="font-size:20px; font-weight:700;">روزنامہ نیا ایکسپریس</p>
+            <p style="font-size:16px;">لاہور / اسلام آباد</p>
+        </div>
     </div>
 </div>
 

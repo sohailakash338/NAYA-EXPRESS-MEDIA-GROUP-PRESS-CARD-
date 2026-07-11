@@ -5,8 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Naya Express Media Group | Verification Portal </title>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap" rel="stylesheet">
-<link rel="icon" type="image/png" href="logo.png">
-<meta property="og:image" content="logo.png">
+<link rel="icon" href="logo.png">
 
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
@@ -26,22 +25,20 @@ h1{text-align:center;font-size:52px;color:#00ff88;font-weight:800;margin-bottom:
 .verify-box{background:linear-gradient(135deg, rgba(12,25,15,0.98) 0%, rgba(8,15,10,0.98) 100%);border:2.5px solid rgba(0,255,136,0.6);border-radius:22px;padding:45px 35px;box-shadow:0 0 50px rgba(0,255,136,0.2);margin-bottom:70px}
 .label-green{color:#00ff88;font-size:14px;font-weight:800;letter-spacing:3px;margin-bottom:16px;display:flex;align-items:center;gap:12px}
 .label-green::before{content:"";width:5px;height:22px;background:#00ff88;border-radius:3px;box-shadow:0 0 12px #00ff88}
-input{width:100%;background:#080808;border:2.5px solid #1a2a1a;border-radius:16px;padding:22px;color:#fff;font-size:18px;text-align:center;margin-bottom:22px;font-family:'Poppins';transition:0.3s;letter-spacing:2px;font-weight:600}
-input:focus{outline:none;border-color:#00ff88;box-shadow:0 0 30px rgba(0,255,136,0.5);background:#0a0a0a}
-.verify-btn{width:100%;background:transparent;border:3px solid #ffb400;color:#ffb400;padding:22px;border-radius:16px;font-size:19px;font-weight:800;cursor:pointer;transition:0.3s;letter-spacing:3px}
-.verify-btn:hover{background:#ffb400;color:#000;box-shadow:0 0 35px rgba(255,180,0,0.7);transform:translateY(-4px)}
-.press-card{background:linear-gradient(135deg,#0a3d62 0%,#1e6091 100%);border-radius:28px;border:6px solid #f4b400;box-shadow:0 0 60px rgba(244,180,0,0.5);margin-top:35px;display:none;overflow:hidden;animation:fadeIn 0.7s ease;max-width:580px;margin-left:auto;margin-right:auto}
-@keyframes fadeIn{from{opacity:0;transform:translateY(40px)}to{opacity:1;transform:translateY(0)}}
-.card-header{background:#f4b400;color:#0a3d62;text-align:center;padding:25px;font-weight:800;font-size:26px;letter-spacing:1.5px}
+input{width:100%;background:#080808;border:2.5px solid #1a2a1a;border-radius:16px;padding:22px;color:#fff;font-size:18px;text-align:center;margin-bottom:22px;font-family:'Poppins';letter-spacing:2px;font-weight:600}
+.verify-btn{width:100%;background:transparent;border:3px solid #ffb400;color:#ffb400;padding:22px;border-radius:16px;font-size:19px;font-weight:800;cursor:pointer;letter-spacing:3px}
+.verify-btn:hover{background:#ffb400;color:#000}
+.press-card{background:linear-gradient(135deg,#0a3d62 0%,#1e6091 100%);border-radius:28px;border:6px solid #f4b400;box-shadow:0 0 60px rgba(244,180,0,0.5);margin-top:35px;display:none;overflow:hidden;max-width:580px;margin-left:auto;margin-right:auto}
+.card-header{background:#f4b400;color:#0a3d62;text-align:center;padding:25px;font-weight:800;font-size:26px}
 .sub-header{text-align:center;padding:18px;background:#0a3d62;font-size:22px;border-bottom:5px solid #f4b400;font-weight:700;color:#fff}
-.status-bar{background:#28a745;color:#fff;text-align:center;padding:18px;font-weight:800;font-size:20px;letter-spacing:1.5px}
+.status-bar{background:#28a745;color:#fff;text-align:center;padding:18px;font-weight:800;font-size:20px}
 .card-body{padding:45px 40px;line-height:3.2;font-size:20px;color:#fff;text-align:left}
 .photo-section{display:flex; flex-direction:column; gap:25px; margin-bottom:30px; align-items:center}
-.photo-box{width:100%;max-width:480px;border:6px solid #f4b400;border-radius:18px;overflow:hidden;background:#fff;box-shadow:0 0 30px rgba(244,180,0,0.6)}
+.photo-box{width:100%;max-width:480px;border:6px solid #f4b400;border-radius:18px;overflow:hidden;background:#fff}
 .photo-box img{width:100%;height:auto;display:block}
 .photo-title{text-align:center; font-size:18px; font-weight:800; color:#f4b400; margin-top:10px; margin-bottom:15px}
 .label{font-weight:800;color:#f4b400;display:inline-block;width:160px;font-size:20px}
-.chief-section{clear:both;padding-top:30px;margin-top:25px;border-top:4px solid rgba(244,180,0,0.5);text-align:center;font-size:18px}
+.chief-section{padding-top:30px;margin-top:25px;border-top:4px solid rgba(244,180,0,0.5);text-align:center;font-size:18px}
 .chief-title{color:#f4b400;font-weight:800;margin-bottom:6px;font-size:19px}
 .footer{text-align:center;padding:20px;background:#000;font-size:16px;color:#ccc;border-top:5px solid #f4b400;font-weight:700}
 .appointment-wrap{max-width:580px; margin:40px auto; background:#0a3d62; border:4px solid #f4b400; padding:30px; border-radius:20px}
@@ -53,7 +50,6 @@ input:focus{outline:none;border-color:#00ff88;box-shadow:0 0 30px rgba(0,255,136
 .app-letter-box{margin:20px 0}
 .app-letter-box img{width:100%; border:3px solid #f4b400; border-radius:15px}
 .note-white{background:#000; color:#fff; padding:20px; border-radius:10px; font-size:17px; font-weight:700; text-align:center; direction:rtl; line-height:2; margin-top:20px}
-.site-footer{text-align:center;padding:40px 0 20px;color:#555;font-size:15px;border-top:1px solid #1a1a1a;margin-top:60px}
 </style>
 </head>
 <body>
@@ -68,10 +64,7 @@ input:focus{outline:none;border-color:#00ff88;box-shadow:0 0 30px rgba(0,255,136
             <p>VOICE OF TRUTH . STRENGTH OF NATION</p>
         </div>
     </div>
-    <div class="secure">
-        <svg fill="currentColor" viewBox="0 0 24 24" width="20"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm0 10.99h7c-.53 4.12-3.28 7.79-7 8.94V12H5V6.3l7-3.11v8.8z"/></svg>
-        Secure Verification
-    </div>
+    <div class="secure">Secure Verification</div>
 </div>
 
 <div class="main-title">NAYA EXPRESS MEDIA GROUP</div>
@@ -92,19 +85,9 @@ input:focus{outline:none;border-color:#00ff88;box-shadow:0 0 30px rgba(0,255,136
     
     <div class="card-body">
         <div class="photo-section">
-            <div>
-                <div class="photo-box"><img src="photo1.jpg" alt="Press Card"></div>
-                <div class="photo-title">Press Card</div>
-            </div>
-            <div>
-                <div class="photo-box"><img src="photo3.jpg" alt="CNIC Card"></div>
-                <div class="photo-title">CNIC Card</div>
-            </div>
-            <!-- AUTHORITY LETTER BOX -->
-            <div>
-                <div class="photo-box"><img src="photo.jpg" alt="Authority Letter"></div>
-                <div class="photo-title">Authority Letter</div>
-            </div>
+            <div><div class="photo-box"><img src="photo1.jpg" alt="Press Card"></div><div class="photo-title">Press Card</div></div>
+            <div><div class="photo-box"><img src="photo3.jpg" alt="CNIC Card"></div><div class="photo-title">CNIC Card</div></div>
+            <div><div class="photo-box"><img src="photo.jpg" alt="Authority Letter"></div><div class="photo-title">Authority Letter</div></div>
         </div>
         
         <div><span class="label">Name:</span> Sadiq Akbar</div>
@@ -119,35 +102,19 @@ input:focus{outline:none;border-color:#00ff88;box-shadow:0 0 30px rgba(0,255,136
         </div>
     </div>
     
-    <div class="footer">
-        This card is for identification purpose only | Naya Express Media Group
-    </div>
+    <div class="footer">This card is for identification purpose only | Naya Express Media Group</div>
 </div>
 
 <div class="appointment-wrap" id="appointmentSection" style="display:none;">
     <div class="app-head">اعلان تقرری</div>
     <div class="app-content">
-        <p>صدیق اکبر</p>
-        <p>کو</p>
-        <div class="app-post">ڈسٹرکٹ رپورٹر</div>
-        <p>ضلع چارسدہ مقرر کیا گیا ہے</p>
+        <p>صدیق اکبر</p><p>کو</p><div class="app-post">ڈسٹرکٹ رپورٹر</div><p>ضلع چارسدہ مقرر کیا گیا ہے</p>
     </div>
     <hr style="border:none; border-top:2px dashed #f4b400; margin:20px 0">
     <div class="app-note">سرکاری غیر سرکاری ادارے نوٹ فرما لیں</div>
     <div class="app-yellow">خبریں اشاعت کے لیے رابطہ کریں</div>
-    
-    <div class="app-letter-box">
-        <img src="photo2.jpg" alt="Appointment Letter">
-    </div>
-    
-    <div class="note-white">
-        نوٹ: جس شناختی کارڈ کا سٹیٹس "Active" نہیں ہوگا وہ ادارے سے منسلک نہیں ہے۔<br>
-        کسی بھی شک کی صورت میں ادارے سے رابطہ کریں۔
-    </div>
-</div>
-
-<div class="site-footer">
-    © 2026 Naya Express Media Group
+    <div class="app-letter-box"><img src="photo2.jpg" alt="Appointment Letter"></div>
+    <div class="note-white">نوٹ: جس شناختی کارڈ کا سٹیٹس "Active" نہیں ہوگا وہ ادارے سے منسلک نہیں ہے۔<br>کسی بھی شک کی صورت میں ادارے سے رابطہ کریں۔</div>
 </div>
 
 </div>
